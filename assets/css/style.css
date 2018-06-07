@@ -1,13 +1,14 @@
 body {
-    background-color: black;
+    background-image: url(../images/gringotts.jpg);
+    background-color: transparent !important;
     background-position: center;
     background-size: cover;
-    width: 800px;
+    background-repeat: no-repeat;
+    width:1200px;
     max-width: 100%;
 }
 
 .container {
-    background-image: url(../images/gringotts.jpg);
     color: rgb(240, 229, 82);
     font-family: 'Arbutus Slab', serif;
     text-align: center;

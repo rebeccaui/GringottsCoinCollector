@@ -1,27 +1,25 @@
-body {
+html {
     background-image: url(../images/gringotts.jpg);
-    background-color: transparent !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width:1200px;
+    text-shadow: .5px .5px black;
+}
+body {
+    background-color: transparent !important;
+    width:1140px;
     max-width: 100%;
+    margin: auto !important;
 }
 
 .container {
-    color: rgb(240, 229, 82);
+    color: rgb(214, 202, 24);
     font-family: 'Arbutus Slab', serif;
     text-align: center;
     height: 100%;
     overflow: hidden;
     z-index: 0;
-    float: center;
-}
-
-.jumbotron {
-    background-image: url(../images/gringotts.jpg);
-    color: rgb(240, 229, 82);
-    font-family: 'Arbutus Slab', serif;
+    max-width: 100%;
 }
 
 .flexbox {
@@ -34,14 +32,35 @@ body {
 
 .coinsFlexbox {
     display: flex;
-    flex-direction: row;
-    /*make flex-direction: row; for larger screens*/
-    justify-content: space-between;
-    max-height: 200px;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
     border-style: solid;
     border-color: rgb(240, 229, 82);
     border-width: 10px 10px;
+    background-color: white;
+    margin: auto auto 20px auto;
 }
 .coinImg {
-    size: auto;
+    width: 202px;
+    height: 202px;
+    margin: auto;
 }
+
+#dataRow {
+
+}
+
+@media(min-width: 576px) {
+    .coinsFlexbox {
+        flex-flow: row nowrap;
+        width: 100%;
+        max-height: 202px;
+    }
+    .coinImg {
+        width: 25%; 
+        height: 100%;
+    }
+}
+

@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gringott's Coin Collector</title>
+        <!--Link to CSS stylesheet-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!--Link to Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!--Link to fonts used-->
+        <link href="https://fonts.googleapis.com/css?family=Alegreya|Arbutus+Slab|Special+Elite" rel="stylesheet">
+        <!--Link to jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--Link to Javascript file-->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
 
+<body>
+    <div class="container">
+        <h1>Welcome to Gringott's Wizard Bank!</h1>
+        <h3>Press the coins to achieve the number displayed below.</h3>
+    
+
+        <div class="row flexbox">
+                <h1 id="numberToGuess">#</h1>
+        </div>
+
+        <div class="row">
+            <div class="coinsFlexbox">
+                <img class="coinImg" id="knut" value="knutValue" src="assets/images/knut.jpg" alt="Knut">
+                <img class="coinImg" id="sickle" value="sickleValue" src="assets/images/sickle.jpg" alt="Sickle">
+                <img class="coinImg" id="galleon" value="galleonValue" src="assets/images/galleon.jpg" alt="Galleon">
+                <img class="coinImg" id="da" value="daValue" src="assets/images/DA.jpeg" alt="Dumbledore's Army Coin">
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4">
+                    <h3 id="wins">Wins: </h3>
+                </div>
+                <div class="col-md-4">
+                    <h2 id="total">Your Total: </h2>
+                </div>
+                <div class="col-md-4">
+                    <h3 id="losses">Losses: </h3>
+                </div>
+            </div>
+    
+    </div>
+
+</body>
+
+
+</html>

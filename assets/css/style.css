@@ -1,1 +1,46 @@
+body {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    max-width: 100%;
+}
 
+.container {
+    background-image: url(../images/gringotts.jpg);
+    color: rgb(240, 229, 82);
+    font-family: 'Arbutus Slab', serif;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    float: center;
+}
+
+.jumbotron {
+    background-image: url(../images/gringotts.jpg);
+    color: rgb(240, 229, 82);
+    font-family: 'Arbutus Slab', serif;
+}
+
+.flexbox {
+    justify-content: center;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+.coinsFlexbox {
+    display: flex;
+    flex-direction: row;
+    /*make flex-direction: row; for larger screens*/
+    justify-content: space-between;
+    max-height: 200px;
+    border-style: solid;
+    border-color: rgb(240, 229, 82);
+    border-width: 10px 10px;
+}
+.coinImg {
+    size: auto;
+}

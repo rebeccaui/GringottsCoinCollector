@@ -22,7 +22,6 @@ var coinAudio = document.createElement("audio");
 var gameAudio = new Audio("assets/audio/harrysWondrousWorld.mp3");
     gameAudio.controls = true;
 
-    
     // Game audio
     function music() {
         gameAudio.play();
@@ -40,10 +39,10 @@ var gameAudio = new Audio("assets/audio/harrysWondrousWorld.mp3");
         // The player's running sum starts at 0 again
         total = 0;
         // The values of the coins are reassigned a random number 1-12 at the start of each round
-        var knut = Math.floor(Math.random() * 11 +1);
-        var sickle = Math.floor(Math.random() * 11 +1);
-        var galleon = Math.floor(Math.random() * 11 +1);
-        var da = Math.floor(Math.random() * 11 +1);
+        knut = Math.floor(Math.random() * 11 +1);
+        sickle = Math.floor(Math.random() * 11 +1);
+        galleon = Math.floor(Math.random() * 11 +1);
+        da = Math.floor(Math.random() * 11 +1);
         // Running tallies for game variables
         $("#wins").html("Wins: " + wins);
         $("#losses").html("Losses: " + losses);
@@ -85,6 +84,7 @@ var gameAudio = new Audio("assets/audio/harrysWondrousWorld.mp3");
     $(".coinImg").on("click", function() {
         // The computer listens for which coin was clicked and finds its value
         var chosenCoin = $(this).attr("value");
+        
         // Cases of each coin being pressed and their corresponding values added to the user's running total
         if (chosenCoin == "knutValue") {
             music();

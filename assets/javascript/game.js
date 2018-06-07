@@ -15,13 +15,23 @@ var sickle = Math.floor(Math.random() * 11 +1);
 var galleon = Math.floor(Math.random() * 11 +1);
 var da = Math.floor(Math.random() * 11 +1);
 
-var coinAudio = src="../audio/coin-drop-4.mp3";
-var gameAudio = new Audio("../audio/harrysWondrousWorld.mp3");
-gameAudio.play();
+var coinAudio = document.createElement("audio");
+    coinAudio.src="assets/audio/coin-drop-4.mp3";
+    coinAudio.volume = 1;
+    coinAudio.preLoad = true;
+var gameAudio = new Audio("assets/audio/harrysWondrousWorld.mp3");
+    gameAudio.controls = true;
 
     
-    //
-    
+    // Game audio
+    function music() {
+        gameAudio.play();
+        gameAudio.loop = true;
+        $(".coinImg").on("click", function() {
+            coinAudio.play();
+        });
+    }
+    music();
     
     // Resetting the variables at the beginning of each round
     function reset() {
@@ -77,12 +87,16 @@ gameAudio.play();
         var chosenCoin = $(this).attr("value");
         // Cases of each coin being pressed and their corresponding values added to the user's running total
         if (chosenCoin == "knutValue") {
+            music();
             total += knut;
         } else if (chosenCoin == "sickleValue") {
+            music();
             total += sickle;
         } else if (chosenCoin == "galleonValue") {
+            music();
             total += galleon;
         } else if (chosenCoin == "daValue") {
+            music();
             total += da;
         } else {
             console.log("No coin selected.");

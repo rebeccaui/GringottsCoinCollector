@@ -1,4 +1,4 @@
-The Gringott's Coin Collector Game 
+# The Gringott's Coin Collector Game 
 
 In this Harry Potter coin collecting game, the user arrives at Gringott’s Wizard Bank and must use the four magical coins (knut, sickle, galleon, and Dumbledore’s Army coin) to deposit the correct amount of money into the bank. 
 

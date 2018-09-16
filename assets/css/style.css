@@ -38,9 +38,9 @@ body {
 .coinsFlexbox {
     display: flex;
     flex-flow: row wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    width: 220px;
+    width: 90% /*220px*/;
     border-style: solid;
     border-color: rgb(240, 229, 82);
     border-width: 10px 10px;
@@ -48,14 +48,14 @@ body {
     margin: auto auto 20px auto;
 }
 .coinImg {
-    width: 202px;
-    height: 202px;
+    width: 140px;
+    height: 140px;
     margin: auto;
 }
 
-@media(min-width: 576px) {
+@media(min-width: 425px) {
     .coinsFlexbox {
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         width: 100%;
     }
     .coinImg {
@@ -63,4 +63,6 @@ body {
         height: 100%;
     }
 }
+
+
 

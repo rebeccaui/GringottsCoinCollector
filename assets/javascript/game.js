@@ -81,7 +81,7 @@ var gameAudio = new Audio("assets/audio/harrysWondrousWorld.mp3");
     reset();
 
     // Window listens for clicks on any of the coins
-    $(".coinImg").on("click", function() {
+    coins.on("click", function() {
         // The computer listens for which coin was clicked and finds its value
         var chosenCoin = $(this).attr("value");
         

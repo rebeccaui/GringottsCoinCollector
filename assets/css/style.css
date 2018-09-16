@@ -3,7 +3,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    text-shadow: .75px .75px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     background-color: black;
 }
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    color: rgb(214, 202, 24);
+    color: rgb(252, 238, 46);
     font-family: 'Arbutus Slab', serif;
     text-align: center;
     height: 100%;
@@ -42,8 +42,10 @@ body {
     justify-content: center;
     width: 90% /*220px*/;
     border-style: solid;
-    border-color: rgb(240, 229, 82);
+    border-color: rgb(252, 238, 46);
     border-width: 10px 10px;
+    /*outline: 3px solid black;
+    box-shadow: 3px 3px 3px 3px black;*/
     background-color: white;
     margin: auto auto 20px auto;
 }
